@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   //  1. Подсчитать сумму всех чисел в заданном пользователем диапазоне.
+
+   //    var downNumb=prompt("enter the down number");
+//    var upNumb=prompt("enter the up number");
+//    var sum=0;
+// for(var i=downNumb;i<=upNumb;i++)
+// {
+//     sum += downNumb++;
+//
+// }
+// alert(sum);
+//    //  2. Запросить 2 числа и найти только наибольший общий делитель.
+
+   //    var a=prompt("enter the first number");
+//    var b=prompt("enter the second number");
+//    var div=1;
+//    while (a!=0 && b!=0) {
+//        if (a>b) {
+//            a=a%b;
+//        }
+//        else
+//        {
+//         var buf=a;
+//          a=b;
+//          b=buf;
+//          a=a%b;
+//        }
+//    }
+//   div=a+b;
+//    alert(div);
+
+   //  3. Запросить у пользователя число и вывести все делители этого числа.
+
+   // let numb=prompt("enter the number");
+// let divisor=[];
+// if(numb==0)
+// {
+//     alert("You can`t division on 0");
+//
+// }
+// else if(numb==1)
+// {
+//     alert("the only divisor is 1")
+// }
+// else
+// {
+//     for (let i=numb; i>0;i--)
+//     {
+//         if(numb%i==0)
+//         {
+//             divisor.push(i);
+//         }
+//
+//     }
+// alert(divisor);
+// }
+
+   //  4. Определить количество цифр в введенном числе.
+
+   // let numb=prompt("enter the number");
+   // let count=0;
+   // do{
+   //     numb/=10;
+   //     count++;
+   // }
+   // while (numb>=1);
+   // alert(count);
+
+   //  5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран.
+   // Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.
+//   plus=0;
+//   minus=0;
+//   zero=0;
+//   even=0;
+//   odd=0;
+//    for(let i=0; i<10;i++)
+//    {
+//        let numb=prompt('enter the number');
+//        if (numb<0)
+//        {
+//             minus++;
+//        }
+//         else if(numb>0)
+//        {
+//            plus++;
+//        }
+//        else
+//        {
+//            zero++;
+//        }
+// if(numb!=0)
+// {
+//     if(numb%2==0)
+//     {
+//         even++;
+//     }
+//     else
+//     {
+//         odd++;
+//     }
+//
+// }
+//
+//
+//    }
+//    alert('there is ' +plus+' positive; '+ minus+' negative; '+ even +' even; '+ odd+' odd numbers and '+zero+ ' zero ')
+
+
+
+   //  6. Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример, вывести результат и спросить, хочет ли он решить еще один пример. И так до тех пор, пока пользователь не откажется.
+
+//    let res=0;
+//    let flag=true;
+//    while (flag)
+//    {
+//
+//        let numb1=parseInt( prompt('Enter the first number'));
+//        let sign=prompt('enter the sign');
+//        let numb2=parseInt( prompt('enter the second number'));
+// switch (sign) {
+//     case '+':
+//         res = numb1 + numb2;
+//         alert(res);
+//         flag=confirm('again?');
+//         break;
+//     case '-':
+//         res = numb1 - numb2;
+//         alert(res);
+//         flag=confirm('again?');
+//         break;
+//     case '*':
+//         res = numb1 * numb2;
+//         alert(res);
+//         flag=confirm('again?');
+//         break;
+//     case '/':
+//         if (numb2 != 0)
+//         {
+//             res = numb1/numb2;
+//             alert(res);
+//
+//         }
+//         else {
+//         alert('You can`t devide on 0');
+//         }
+//         flag=confirm('again?');
+//         break;
+// }
+//
+//    }
+   //  7. Запросить у пользователя число и на сколько цифр его сдвинуть. Сдвинуть цифры числа и вывести результат (если число 123456 сдвинуть на 2 цифры, то получится 345612).
+   // let numb=prompt('Enter the number');
+   // let pos=prompt('Enter the position');
+   // let buf=[];
+   // let res='';
+   // for (let i=0;i<pos;i++)
+   // {
+   //     buf[i]=numb[i];
+   //
+   // }
+   // for ( i=pos;i<numb.length;i++)
+   // {
+   //     res+=numb[i];
+   //
+   // }
+   // for (i=0;i<buf.length;i++)
+   // {
+   //     res+=buf[i];
+   // }
+   // alert(res);
+
+   // 8. Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть следующий день?» и так до тех пор, пока пользователь нажимает OK.
+
+   // let flag=true;
+   // let i=0;
+   // let weekDay=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+   //
+   //     while (flag &&i<weekDay.length)
+   //    {
+   //    flag=confirm( weekDay[i++]+ ' Do you want to see the next day?');
+   //
+   //    }
+   //  9. Вывести таблицу умножения для всех чисел от 2 до 9. Каждое число необходимо умножить на числа от 1 до 10.
+   //  for (let i=2;i<10;i++)
+   //  {
+   //      for(let j=1;j<=10;j++)
+   //      {
+   //          console.log(i+'*'+j+'='+i*j);
+   //      }
+   //  }
+   //
+
+   // Игра «Угадай число». Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом:
+   // каждую итерацию цикла делите диапазон чисел пополам, записываете результат в N и спрашиваете у пользователя
+   // «Ваше число > N, < N или == N?». В зависимости от того что указал пользователь, уменьшаете диапазон. Начальный диапазон от 0 до 100,
+   // поделили пополам и получили 50. Если пользователь указал, что его число > 50, то изменили диапазон на от 51 до 100. И так до тех пор,
+   // пока пользователь не выберет == N.
+
+    let buttom=1;
+   let up=100;
+   let avg=Parsei 0;
+   flag=confirm( 'Choose the number');
+   let choise=
+  do
+   {
+       avg=(up+buttom)/2;
+       flag=confirm('Is the number from'+buttom +' to'+ avg+1+ 'or from '+avg +'to'+up)
+      if( flag)
+      {
+        up=avg;
+
+      }else {
+          buttom=avg;
+      }
+confirm('You number  is '+ avg+1);
+
+   }while (avg!=buttom||(avg+1)!=up)
+</script>
+</body>
+</html>
